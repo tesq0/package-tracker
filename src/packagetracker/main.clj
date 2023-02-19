@@ -1,4 +1,6 @@
-(ns package-tracker
+(set! *warn-on-reflection* true)
+(ns packagetracker.main
+  (:gen-class)
   (:require [clojure.core.async :as async]
             [clojure.string :as str]
             [clojure.data.json :as json]
