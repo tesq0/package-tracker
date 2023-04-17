@@ -7,7 +7,7 @@
   (cond
     (includes? response "Przesyłka doręczona") (get package-statuses :delivered)
     (includes? response "Przesyłka niedoręczona") (get package-statuses :failed-attempt)
-    (includes? response "Wydanie przesyłki do doręczenia") (get package-statuses :ouf-for-delivery)
+    (includes? response "Wydanie przesyłki do doręczenia") (get package-statuses :out-for-delivery)
     (includes? response "Przesyłka odebrana przez Kuriera") (get package-statuses :in-transit)
     :else (get package-statuses :pending)))
 
